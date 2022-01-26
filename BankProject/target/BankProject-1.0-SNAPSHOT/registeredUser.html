@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Test Bank, Inc. -- Registration Page for Account Holders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    <form name="form" method="POST" action="RegisteredUser.jsp">
+        <script Language="JavaScript">
+            function checkPass() {
+                if (((form.accNo.value).length == 0) || ((form.pwd.value) != (form.cnfpwd.value)) || ((form.pwd.value).length == 0) || ((form.cnfpwd.value).length == 0) || ((form.firstName.value).length == 0) || ((form.lastName.value).length == 0) || ((form.email.value).length == 0) || ((form.id.value).length == 0)) {
+
+                    alert("Please provide complete and correct information");
+                } else {
+                    //alert(form.account.value);
+                    form.submit();
+                }
+
+            }
+        </script>
+        </>
+        <body>
+            <p></p>
+            <table border="0" width="100%">
+                <tr>
+                    <td width="50%" height="36"><b><font size="5"><i>Test Bank, Inc.</i></font></b></td>
+                    <td width="50%" height="36"></td>
+                </tr>
+            </table>
+
+
+            <p align="left">
+                <b><font size="4">Registration Information for Account Holders</font></b>
+            </p>
+            <table border="0" >
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Account Number:</p>
+                    </td>
+                    <td>
+                        <input type="text" name="accNo" size="15">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Password:</p>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd" size="16">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Confirm Password:</p>
+                    </td>
+                    <td>
+                        <input type="password" name="cnfpwd" size="16">
+                    </td>
+                </tr>
+                
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Branch</p>
+                    </td>
+                    <td>
+                        <select size="1" name="branch">
+                            <option>Sofia</option>
+                            <option>Plovdiv</option>
+                            <option>Varna</option>
+                            <option>Burgas</option>
+                            <option>Ruse</option>
+                            <option>Stara Zagora</option>
+                            <option>Pleven</option>
+                            <option>Sliven</option>
+                            <option>Dobrich</option>
+                            <option>Shumen</option>
+                            <option>Pernik</option>
+                            <option>Haskovo</option>
+                            <option>Yambol</option>
+                            <option>Pazardzhik</option>
+                            <option>Blagoevgrad</option>
+                            <option>Veliko Tarnovo</option>
+                            <option>Vratsa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Account type:</p>
+                    </td>
+                    <td>
+                        <select size="1" name="account">
+                            <option>Savings Account</option>
+                            <option>Checking Account</option>
+                            <option>Fixed Deposits</option>
+                            <option>Recurring Deposits</option>
+                            <option>Personal Loans</option>
+                            <option>Home Loans</option>
+                            <option>Consumer Loans</option>
+                            <option>Auto Loans</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Registration ID:</p>
+                    </td>
+                    <td>
+                        <input type="text" name="id" size="20">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Name:</p>
+                    </td>
+                    <td>
+                        <input type="text" name="firstName" size="20">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Middle Name:</p>                
+                    </td>
+                    <td>
+                        <input type="text" name="middleName" size="20">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">Last Name:</p>                
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" size="20">
+                    </td>
+                </tr>
+                <tr>  
+                    <td>
+                        <p class="regUserForm">E-mail:</p>
+                    </td>
+                    <td>
+                        <input type="text" name="email" size="20">
+                    </td>
+                </tr>
+
+            </table>
+            <p align="left">
+                <input type="button" value="Submit" name="Submit" onClick="checkPass()">
+                <input type="reset" value="Reset" name="Reset">
+            </p>
+    </form>
+    <p align="left"><font ><a href="index.html">Home Page</a></font></p>
+</body>
+</html>
